@@ -74,6 +74,7 @@ margin-left: 42%;
 width: 250px;
 height: 50px;
 text-align: center;
+text-decoration: none;
 font-size: x-large;
 padding-top: 1.5%;
 background-position: center;
@@ -351,23 +352,62 @@ hr.hr4 {
   align-items: flex-start;
   padding: 20px;
 }
-.cmaward0 {
+.awards-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+    gap: 20px; /* Adjusts the spacing between the child divs */
+}
+
+.cmaward0, .awds {
   flex: 1;
   padding: 20px;
   color: white;
-  background-color: #74B1FF;
   text-align: center;
+  font-size: large;
   border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.cmaward0{
+  padding-bottom: 40px;
 }
 .awds{
-  text-align: center;
-  padding-left: 10px;
+  color: #000000                                          ;
+}
+
+.cmaward0 {
+  background-color: #74B1FF;
+}
+
+.awds {
+  background-color: #F8DF3D;
 }
 
 .cm, .awd {
   font-size: xx-large;
   font-weight: bolder;
 }
+
+.cmaward0 img, .awds img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; /* Reduced border-radius for a cleaner look */
+}
+
+@media (max-width: 768px) {
+  .awards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cmaward0, .awds {
+    margin: 10px 0;
+  }
+}
+
 .subcm, .subawd {
   font-size: x-large;
   font-weight: bolder;
@@ -407,8 +447,8 @@ hr.hr4 {
 .channel-info{
   display: flex;
   background-color: #f8df3d;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .channeltext{
   text-align: center;
@@ -430,8 +470,8 @@ div.reg-now1 {
   text-align: center;
   font-size: x-large;
   font-weight: bolder;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left:auto;
   margin-right: auto; /* Margin to separate from the yellow blocks */
   border-radius: 20px;
@@ -450,9 +490,10 @@ div.reg-now1 {
 }
 
 .footer-section {
-  flex: 2;
-  padding-right: 100px;
+  /* flex: 2; */
+  padding-right: 180px;
   font-size: larger;
+  width:45%;
 }
 
 .footer-logo {
@@ -479,9 +520,9 @@ div.reg-now1 {
   flex: 1;
   display: flex;
   justify-content: space-between;
-  font-size: larger;
-  padding-right: 50px; /* Reduced padding to fit content */
-  padding-left: 50px;
+  font-size: large;
+  padding-top: 20px; /* Reduced padding to fit content */
+  padding-left: 10px;
 }
 
 .footer-link-section {
