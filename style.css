@@ -805,6 +805,18 @@ div.reg-now1 {
 .footer-logo {
   height: 50px;
 }
+@media (max-width:600px)
+{
+  .footer-logo {
+    height: 30px;
+  }
+}
+@media (max-width:1215px)
+{
+  .footer-logo {
+    height: 40px;
+  }
+}
 
 .footer-section p {
   margin: 20px 0;
