@@ -490,7 +490,7 @@ div.brands div {
 }
 
 .speaker img {
-  height: 400px;
+  height: 30vw;
   float: left;
   padding-left: 50px;
 }
@@ -524,7 +524,7 @@ div.brands div {
   .speaker img {
     padding-left: 0;
     margin-bottom: 20px;
-
+    height: 40vw;
   }
 
   .sname,
