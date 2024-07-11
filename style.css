@@ -207,9 +207,9 @@ ul.icons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 140px;
-  width: 160px;
+  justify-content: space-evenly;
+  height: 180px;
+  width: 200px;
   background-color: #f8df3d;
   border-radius: 10px;
   text-align: center;
@@ -218,6 +218,25 @@ ul.icons {
 .yellow-block img{
   width: 70px;
 }
+
+
+@media (max-width : 1415px){
+  .yellow-block{
+    width: 170px;
+    height: 150px;
+  }
+}
+
+@media (max-width : 1240px){
+  .yellow-block{
+    width: 150px;
+    height: 130px;
+  }
+  .yellow-block img{
+    width: 60px;
+  }
+}
+
 
 @media (max-width: 1115px) {
   section.complete0 {
@@ -298,10 +317,47 @@ ul.icons {
   .yellow-block img{
     width: 50px;
   }
-  .yellow-block span {
+  .yellow-block p {
     font-size: 18px;
   }
 }
+
+
+@media (max-width: 470px){
+  .yellow-block{
+    width: 110px;
+    height: 90px;
+  }
+
+  .yellow-block p{
+    font-size: 15px;
+  }
+
+  .yellow-block img{
+    width: 50px;
+  }
+}
+@media (max-width: 390px){
+  .non-bold{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+  .yellow-block{
+    width: 100px;
+    height: 80px;
+  }
+
+  .yellow-block p{
+    font-size: 12px;
+  }
+
+  .yellow-block img{
+    width: 40px;
+  }
+}
+
 .reg-now {
   color: white;
   background-color: #0271ff;
@@ -428,6 +484,12 @@ ul.chart0 li {
 @media (max-width: 600px) {
   .target_customer {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .target_customer {
+    font-size: 15px;
   }
 }
 /* Media Queries for Responsive Design */
